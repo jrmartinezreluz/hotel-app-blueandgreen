@@ -1,0 +1,25 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8080:8080"
+
+  frontend-blue:
+    build:
+      context: ./frontend
+      args:
+        THEME: winter
+        DEPLOY_SLOT: blue
+        BUILD_TAG: local-blue
+    ports:
+      - "8081:8080"
+
+  frontend-green:
+    build:
+      context: ./frontend
+      args:
+        THEME: summer
+        DEPLOY_SLOT: green
+        BUILD_TAG: local-green
+    ports:
+      - "8082:8080"

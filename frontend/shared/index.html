@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blue &amp; Green Hotel</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow" id="slot-label">Loading…</p>
+        <h1 id="hotel-name">Blue &amp; Green Hotel</h1>
+        <p id="hotel-tagline" class="tagline"></p>
+        <div class="promo-banner" id="promo-banner">
+          <strong id="promo-headline"></strong>
+          <span id="promo-details"></span>
+        </div>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="card">
+        <h2>Restaurant</h2>
+        <p class="menu-season" id="menu-season"></p>
+        <ul id="menu-list"></ul>
+      </section>
+      <section class="card">
+        <h2>Stay with us</h2>
+        <dl class="facts">
+          <div><dt>Address</dt><dd id="hotel-address"></dd></div>
+          <div><dt>Check-in</dt><dd id="hotel-checkin"></dd></div>
+          <div><dt>Check-out</dt><dd id="hotel-checkout"></dd></div>
+        </dl>
+      </section>
+    </main>
+
+    <footer>
+      <span id="build-info"></span>
+    </footer>
+    <script src="/app.js"></script>
+  </body>
+</html>
