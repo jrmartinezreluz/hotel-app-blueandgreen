@@ -1,6 +1,6 @@
 # Blue & Green Hotel
 
-Demo hotel web app with a **blue/green** frontend layout: two themed frontends (winter on blue, summer on green) backed by a shared Node.js API.
+Hotel web app with a **blue/green** frontend layout: two themed frontends (winter on blue, summer on green) backed by a shared Node.js API.
 
 ## Stack
 
