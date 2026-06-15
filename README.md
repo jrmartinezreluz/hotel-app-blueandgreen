@@ -1,10 +1,6 @@
 # Blue & Green Hotel
 
-<<<<<<< HEAD
-Hotel web app with a **blue/green** frontend layout: two themed frontends (winter on blue, summer on green) backed by a shared Node.js API.
-=======
 Production hotel web application with a **blue/green** frontend: two themed frontends (winter on blue, summer on green) backed by a shared Node.js API. Deploy updates to the inactive slot, validate, then promote traffic with no downtime.
->>>>>>> 0c4167f (Prepare public repo for production use.)
 
 ## Stack
 
