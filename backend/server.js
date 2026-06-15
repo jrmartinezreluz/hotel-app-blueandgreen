@@ -6,7 +6,7 @@ const port = process.env.PORT || 8080;
 const hotel = {
   name: "Blue & Green Hotel",
   tagline: "Comfort and cuisine by the sea",
-  address: "123 Harbor View, Demo City",
+  address: "123 Harbor View, Coastal Bay",
   checkIn: "15:00",
   checkOut: "11:00",
 };

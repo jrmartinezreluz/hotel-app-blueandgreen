@@ -33,13 +33,6 @@ body {
   margin: 0 auto;
 }
 
-.eyebrow {
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: 0.75rem;
-  color: #ffedd5;
-}
-
 .tagline {
   font-size: 1.25rem;
   color: #fed7aa;
@@ -104,13 +97,6 @@ li small {
 
 dt {
   color: var(--muted);
-}
-
-footer {
-  text-align: center;
-  padding: 2rem;
-  color: var(--muted);
-  font-size: 0.85rem;
 }
 
 .error {

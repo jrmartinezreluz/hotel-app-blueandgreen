@@ -1,6 +1,4 @@
 const THEME = window.__HOTEL_THEME__ || "winter";
-const SLOT = window.__DEPLOY_SLOT__ || "unknown";
-const BUILD_TAG = window.__BUILD_TAG__ || "local";
 
 async function fetchJson(path) {
   const res = await fetch(path);
@@ -20,11 +18,6 @@ function renderMenu(menu) {
 }
 
 async function bootstrap() {
-  document.getElementById("slot-label").textContent =
-    `Frontend slot: ${SLOT.toUpperCase()} · theme: ${THEME}`;
-  document.getElementById("build-info").textContent =
-    `Image tag: ${BUILD_TAG} · theme query: ?theme=${THEME}`;
-
   const [hotel, menu, promo] = await Promise.all([
     fetchJson("/api/hotel"),
     fetchJson(`/api/menu?theme=${THEME}`),
@@ -48,4 +41,3 @@ bootstrap().catch((err) => {
     `<p class="error">Failed to load hotel data: ${err.message}</p>`
   );
 });
-/* deploy */

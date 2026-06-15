@@ -1,6 +1,10 @@
 # Blue & Green Hotel
 
+<<<<<<< HEAD
 Hotel web app with a **blue/green** frontend layout: two themed frontends (winter on blue, summer on green) backed by a shared Node.js API.
+=======
+Production hotel web application with a **blue/green** frontend: two themed frontends (winter on blue, summer on green) backed by a shared Node.js API. Deploy updates to the inactive slot, validate, then promote traffic with no downtime.
+>>>>>>> 0c4167f (Prepare public repo for production use.)
 
 ## Stack
 
@@ -29,7 +33,7 @@ frontend/         nginx + themes (winter, summer)
 docker-compose.yml
 ```
 
-Each frontend image is tagged with a deploy slot (`blue` or `green`) and theme at build time — the same pattern used in blue/green deployments, runnable entirely on your machine.
+Each frontend image is built with a deploy slot (`blue` or `green`) and theme at build time, matching the blue/green rollout pattern used in production.
 
 ## License
 
